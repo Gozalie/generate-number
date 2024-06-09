@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Generate Number</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info-balance">
+        <span
+          >balance :
+          <span id="balance">$0</span>
+        </span>
+        <span id="add-balance" data-open-modal>deposit</span>
+
+        <span id="reset-all">Reset All</span>
+      </div>
+      <div class="info"></div>
+      <div class="wrapper-number">
+        <span id="num1">9</span>
+        <span id="num2">9</span>
+        <span id="num3">9</span>
+      </div>
+      <div id="button-generate">Start</div>
+      <div id="button-reset">Reset Number</div>
+    </div>
+    <dialog data-modal>
+      <div class="inner-modal">
+        <div data-close-modal>X</div>
+        <div class="modal-message-error"></div>
+        <span>enter your balance :</span>
+        <input type="number" id="input-balance" name="input-balance" value="0" />
+        <div class="add-button-wrapper">
+          <div id="add-button">Add</div>
+        </div>
+      </div>
+    </dialog>
+    <script src="test.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
